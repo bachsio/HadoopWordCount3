@@ -48,7 +48,7 @@ public class WordCountDriver extends Configured implements Tool{
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         //Set output format to SequenceFileOutputFormat
-        job.setOutputFormatClass(SequenceFileOutputFormat.class);
+      //  job.setOutputFormatClass(SequenceFileOutputFormat.class);
         job.setMapperClass(WordCountMapper.class);
         job.setReducerClass(WordCountReducer.class);
 
